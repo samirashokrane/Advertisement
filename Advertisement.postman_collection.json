@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "eaf4b531-92ff-4377-a5f1-44d3f37c4432",
+		"name": "Advertisement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4350352",
+		"_collection_link": "https://restless-satellite-605765.postman.co/workspace/Team-Workspace~21f0f1bf-b5a0-4593-8bba-691db9eb7107/collection/4350352-eaf4b531-92ff-4377-a5f1-44d3f37c4432?action=share&source=collection_link&creator=4350352"
+	},
+	"item": [
+		{
+			"name": "processMetric",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "impressions",
+							"type": "file",
+							"src": "postman-cloud:///1ef80062-f6fc-4d30-aab6-983eeddee660"
+						},
+						{
+							"key": "clicks",
+							"type": "file",
+							"src": "postman-cloud:///1ef80063-5db7-4a70-bde9-bfa21f015e83"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1020/api/events/process/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"api",
+						"events",
+						"process",
+						"v1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "impressions",
+									"type": "file",
+									"src": "postman-cloud:///1ef80062-f6fc-4d30-aab6-983eeddee660"
+								},
+								{
+									"key": "clicks",
+									"type": "file",
+									"src": "postman-cloud:///1ef80063-5db7-4a70-bde9-bfa21f015e83"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1020/api/events/process/v1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"api",
+								"events",
+								"process",
+								"v1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Oct 2024 08:47:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"appId\": 30,\n        \"countryCode\": \"\",\n        \"impressions\": 15,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 23,\n        \"countryCode\": \"US\",\n        \"impressions\": 42,\n        \"clicks\": 53,\n        \"revenue\": 95.47532796095349\n    },\n    {\n        \"appId\": 30,\n        \"countryCode\": \"DE\",\n        \"impressions\": 11,\n        \"clicks\": 22,\n        \"revenue\": 50.48608318583566\n    },\n    {\n        \"appId\": 10,\n        \"countryCode\": \"US\",\n        \"impressions\": 22,\n        \"clicks\": 44,\n        \"revenue\": 29.6670304231826\n    },\n    {\n        \"appId\": 4,\n        \"countryCode\": \"\",\n        \"impressions\": 17,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 38,\n        \"countryCode\": \"IT\",\n        \"impressions\": 68,\n        \"clicks\": 62,\n        \"revenue\": 80.49179310721652\n    },\n    {\n        \"appId\": 12,\n        \"countryCode\": \"IT\",\n        \"impressions\": 21,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 15,\n        \"countryCode\": \"\",\n        \"impressions\": 38,\n        \"clicks\": 38,\n        \"revenue\": 63.52933382616079\n    },\n    {\n        \"appId\": 2,\n        \"countryCode\": \"\",\n        \"impressions\": 31,\n        \"clicks\": 62,\n        \"revenue\": 77.82167117446403\n    },\n    {\n        \"appId\": 32,\n        \"countryCode\": \"UK\",\n        \"impressions\": 15,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 19,\n        \"countryCode\": \"UK\",\n        \"impressions\": 30,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 36,\n        \"countryCode\": null,\n        \"impressions\": 34,\n        \"clicks\": 34,\n        \"revenue\": 32.45462860482394\n    },\n    {\n        \"appId\": 19,\n        \"countryCode\": \"US\",\n        \"impressions\": 3,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 26,\n        \"countryCode\": \"DE\",\n        \"impressions\": 28,\n        \"clicks\": 28,\n        \"revenue\": 44.46730531447949\n    },\n    {\n        \"appId\": 13,\n        \"countryCode\": \"\",\n        \"impressions\": 23,\n        \"clicks\": 23,\n        \"revenue\": 24.458524305707172\n    },\n    {\n        \"appId\": 13,\n        \"countryCode\": \"DE\",\n        \"impressions\": 22,\n        \"clicks\": 22,\n        \"revenue\": 10.190921460465525\n    },\n    {\n        \"appId\": 6,\n        \"countryCode\": \"US\",\n        \"impressions\": 19,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 0,\n        \"countryCode\": \"\",\n        \"impressions\": 4,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 34,\n        \"countryCode\": \"IT\",\n        \"impressions\": 26,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 34,\n        \"countryCode\": null,\n        \"impressions\": 25,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 4,\n        \"countryCode\": \"UK\",\n        \"impressions\": 18,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 21,\n        \"countryCode\": null,\n        \"impressions\": 10,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 21,\n        \"countryCode\": \"IT\",\n        \"impressions\": 30,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 30,\n        \"countryCode\": \"US\",\n        \"impressions\": 61,\n        \"clicks\": 197,\n        \"revenue\": 195.58479317023614\n    },\n    {\n        \"appId\": 24,\n        \"countryCode\": \"\",\n        \"impressions\": 37,\n        \"clicks\": 25,\n        \"revenue\": 2.630583723799582\n    },\n    {\n        \"appId\": 28,\n        \"countryCode\": \"US\",\n        \"impressions\": 38,\n        \"clicks\": 152,\n        \"revenue\": 316.42904979333747\n    },\n    {\n        \"appId\": 22,\n        \"countryCode\": \"DE\",\n        \"impressions\": 26,\n        \"clicks\": 26,\n        \"revenue\": 64.49264172055769\n    },\n    {\n        \"appId\": 15,\n        \"countryCode\": \"US\",\n        \"impressions\": 25,\n        \"clicks\": 25,\n        \"revenue\": 53.38109930710304\n    },\n    {\n        \"appId\": 9,\n        \"countryCode\": \"\",\n        \"impressions\": 21,\n        \"clicks\": 21,\n        \"revenue\": 42.26595851691583\n    },\n    {\n        \"appId\": 30,\n        \"countryCode\": null,\n        \"impressions\": 31,\n        \"clicks\": 62,\n        \"revenue\": 65.81923934035899\n    },\n    {\n        \"appId\": 4,\n        \"countryCode\": \"IT\",\n        \"impressions\": 23,\n        \"clicks\": 46,\n        \"revenue\": 101.78384185682644\n    },\n    {\n        \"appId\": 39,\n        \"countryCode\": \"US\",\n        \"impressions\": 13,\n        \"clicks\": 13,\n        \"revenue\": 17.15715166893303\n    },\n    {\n        \"appId\": 26,\n        \"countryCode\": \"US\",\n        \"impressions\": 20,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 20,\n        \"countryCode\": \"\",\n        \"impressions\": 22,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 13,\n        \"countryCode\": \"US\",\n        \"impressions\": 33,\n        \"clicks\": 66,\n        \"revenue\": 85.98714294381854\n    },\n    {\n        \"appId\": 7,\n        \"countryCode\": \"DE\",\n        \"impressions\": 32,\n        \"clicks\": 32,\n        \"revenue\": 11.411954343923568\n    },\n    {\n        \"appId\": 24,\n        \"countryCode\": \"UK\",\n        \"impressions\": 32,\n        \"clicks\": 64,\n        \"revenue\": 109.83856969495781\n    },\n    {\n        \"appId\": 28,\n        \"countryCode\": null,\n        \"impressions\": 71,\n        \"clicks\": 199,\n        \"revenue\": 209.61895522704836\n    },\n    {\n        \"appId\": 18,\n        \"countryCode\": \"DE\",\n        \"impressions\": 16,\n        \"clicks\": 16,\n        \"revenue\": 6.211200202586703\n    },\n    {\n        \"appId\": 11,\n        \"countryCode\": \"US\",\n        \"impressions\": 9,\n        \"clicks\": 9,\n        \"revenue\": 16.06565847408894\n    },\n    {\n        \"appId\": 5,\n        \"countryCode\": \"DE\",\n        \"impressions\": 21,\n        \"clicks\": 21,\n        \"revenue\": 16.56294071460893\n    },\n    {\n        \"appId\": 0,\n        \"countryCode\": \"IT\",\n        \"impressions\": 8,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 35,\n        \"countryCode\": \"US\",\n        \"impressions\": 10,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 29,\n        \"countryCode\": \"\",\n        \"impressions\": 14,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 29,\n        \"countryCode\": \"DE\",\n        \"impressions\": 1,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 9,\n        \"countryCode\": \"US\",\n        \"impressions\": 29,\n        \"clicks\": 58,\n        \"revenue\": 80.90569408371141\n    },\n    {\n        \"appId\": 33,\n        \"countryCode\": \"US\",\n        \"impressions\": 12,\n        \"clicks\": 12,\n        \"revenue\": 22.24174756682486\n    },\n    {\n        \"appId\": 40,\n        \"countryCode\": \"DE\",\n        \"impressions\": 58,\n        \"clicks\": 120,\n        \"revenue\": 181.52466301192322\n    },\n    {\n        \"appId\": 35,\n        \"countryCode\": \"IT\",\n        \"impressions\": 29,\n        \"clicks\": 29,\n        \"revenue\": 7.045305230991874\n    },\n    {\n        \"appId\": 22,\n        \"countryCode\": \"IT\",\n        \"impressions\": 38,\n        \"clicks\": 114,\n        \"revenue\": 302.873517817949\n    },\n    {\n        \"appId\": 9,\n        \"countryCode\": null,\n        \"impressions\": 4,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 9,\n        \"countryCode\": \"IT\",\n        \"impressions\": 28,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 38,\n        \"countryCode\": \"\",\n        \"impressions\": 20,\n        \"clicks\": 20,\n        \"revenue\": 36.03091053578043\n    },\n    {\n        \"appId\": 25,\n        \"countryCode\": \"\",\n        \"impressions\": 27,\n        \"clicks\": 27,\n        \"revenue\": 58.15763701051173\n    },\n    {\n        \"appId\": 5,\n        \"countryCode\": \"US\",\n        \"impressions\": 29,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 16,\n        \"countryCode\": \"UK\",\n        \"impressions\": 18,\n        \"clicks\": 72,\n        \"revenue\": 126.29885368791368\n    },\n    {\n        \"appId\": 33,\n        \"countryCode\": null,\n        \"impressions\": 51,\n        \"clicks\": 127,\n        \"revenue\": 73.71962636773623\n    },\n    {\n        \"appId\": 20,\n        \"countryCode\": \"IT\",\n        \"impressions\": 3,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 7,\n        \"countryCode\": null,\n        \"impressions\": 6,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 7,\n        \"countryCode\": \"IT\",\n        \"impressions\": 49,\n        \"clicks\": 10,\n        \"revenue\": 9.34816649199471\n    },\n    {\n        \"appId\": 16,\n        \"countryCode\": \"US\",\n        \"impressions\": 24,\n        \"clicks\": 72,\n        \"revenue\": 119.5995524084826\n    },\n    {\n        \"appId\": 10,\n        \"countryCode\": \"DE\",\n        \"impressions\": 16,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 14,\n        \"countryCode\": \"UK\",\n        \"impressions\": 18,\n        \"clicks\": 18,\n        \"revenue\": 42.21205048311491\n    },\n    {\n        \"appId\": 18,\n        \"countryCode\": \"IT\",\n        \"impressions\": 23,\n        \"clicks\": 22,\n        \"revenue\": 63.36930093404922\n    },\n    {\n        \"appId\": 18,\n        \"countryCode\": null,\n        \"impressions\": 36,\n        \"clicks\": 72,\n        \"revenue\": 98.28091515173607\n    },\n    {\n        \"appId\": 5,\n        \"countryCode\": \"IT\",\n        \"impressions\": 16,\n        \"clicks\": 32,\n        \"revenue\": 82.18454096576062\n    },\n    {\n        \"appId\": 5,\n        \"countryCode\": null,\n        \"impressions\": 15,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 34,\n        \"countryCode\": \"\",\n        \"impressions\": 19,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 40,\n        \"countryCode\": \"US\",\n        \"impressions\": 51,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 34,\n        \"countryCode\": \"DE\",\n        \"impressions\": 34,\n        \"clicks\": 68,\n        \"revenue\": 125.75102063028564\n    },\n    {\n        \"appId\": 21,\n        \"countryCode\": \"DE\",\n        \"impressions\": 14,\n        \"clicks\": 28,\n        \"revenue\": 16.414227540534302\n    },\n    {\n        \"appId\": 14,\n        \"countryCode\": \"US\",\n        \"impressions\": 8,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 8,\n        \"countryCode\": \"DE\",\n        \"impressions\": 13,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 25,\n        \"countryCode\": \"UK\",\n        \"impressions\": 18,\n        \"clicks\": 18,\n        \"revenue\": 33.28827242835068\n    },\n    {\n        \"appId\": 29,\n        \"countryCode\": null,\n        \"impressions\": 24,\n        \"clicks\": 48,\n        \"revenue\": 87.85718713229524\n    },\n    {\n        \"appId\": 3,\n        \"countryCode\": null,\n        \"impressions\": 16,\n        \"clicks\": 16,\n        \"revenue\": 41.818308215008905\n    },\n    {\n        \"appId\": 19,\n        \"countryCode\": \"\",\n        \"impressions\": 13,\n        \"clicks\": 13,\n        \"revenue\": 17.192704459575573\n    },\n    {\n        \"appId\": 32,\n        \"countryCode\": \"DE\",\n        \"impressions\": 14,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 19,\n        \"countryCode\": \"DE\",\n        \"impressions\": 28,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 6,\n        \"countryCode\": \"\",\n        \"impressions\": 59,\n        \"clicks\": 60,\n        \"revenue\": 83.2320262692909\n    },\n    {\n        \"appId\": 6,\n        \"countryCode\": \"DE\",\n        \"impressions\": 2,\n        \"clicks\": 0,\n        \"revenue\": 0\n    },\n    {\n        \"appId\": 27,\n        \"countryCode\": null,\n        \"impressions\": 15,\n        \"clicks\": 15,\n        \"revenue\": 40.9627701888938\n    },\n    {\n        \"appId\": 27,\n        \"countryCode\": \"IT\",\n        \"impressions\": 33,\n        \"clicks\": 33,\n        \"revenue\": 19.209197651746145\n    },\n    {\n        \"appId\": 1,\n        \"countryCode\": \"IT\",\n        \"impressions\": 21,\n        \"clicks\": 21,\n        \"revenue\": 48.09063975343832\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "recommendations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "impressions",
+							"type": "file",
+							"src": "postman-cloud:///1ef80062-f6fc-4d30-aab6-983eeddee660"
+						},
+						{
+							"key": "clicks",
+							"type": "file",
+							"src": "postman-cloud:///1ef80063-5db7-4a70-bde9-bfa21f015e83"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1020/api/events/recommendations/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"api",
+						"events",
+						"recommendations",
+						"v1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sample",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "impressions",
+									"type": "file",
+									"src": "postman-cloud:///1ef80062-f6fc-4d30-aab6-983eeddee660"
+								},
+								{
+									"key": "clicks",
+									"type": "file",
+									"src": "postman-cloud:///1ef80063-5db7-4a70-bde9-bfa21f015e83"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1020/api/events/recommendations/v1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1020",
+							"path": [
+								"api",
+								"events",
+								"recommendations",
+								"v1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Oct 2024 09:04:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"appId\": 30,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            19\n        ]\n    },\n    {\n        \"appId\": 23,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            17,\n            10\n        ]\n    },\n    {\n        \"appId\": 30,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            27\n        ]\n    },\n    {\n        \"appId\": 10,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            22\n        ]\n    },\n    {\n        \"appId\": 4,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            21\n        ]\n    },\n    {\n        \"appId\": 38,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            10,\n            28\n        ]\n    },\n    {\n        \"appId\": 9,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            24\n        ]\n    },\n    {\n        \"appId\": 12,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            19\n        ]\n    },\n    {\n        \"appId\": 15,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            27\n        ]\n    },\n    {\n        \"appId\": 33,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            10,\n            27\n        ]\n    },\n    {\n        \"appId\": 2,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            7\n        ]\n    },\n    {\n        \"appId\": 32,\n        \"countryCode\": \"UK\",\n        \"recommendedAdvertiserIds\": [\n            8\n        ]\n    },\n    {\n        \"appId\": 19,\n        \"countryCode\": \"UK\",\n        \"recommendedAdvertiserIds\": [\n            16\n        ]\n    },\n    {\n        \"appId\": 19,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            22\n        ]\n    },\n    {\n        \"appId\": 26,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            16\n        ]\n    },\n    {\n        \"appId\": 13,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            23\n        ]\n    },\n    {\n        \"appId\": 13,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            10\n        ]\n    },\n    {\n        \"appId\": 6,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            16,\n            31\n        ]\n    },\n    {\n        \"appId\": 0,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            11\n        ]\n    },\n    {\n        \"appId\": 34,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            17\n        ]\n    },\n    {\n        \"appId\": 4,\n        \"countryCode\": \"UK\",\n        \"recommendedAdvertiserIds\": [\n            32\n        ]\n    },\n    {\n        \"appId\": 21,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            10\n        ]\n    },\n    {\n        \"appId\": 30,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            9,\n            28\n        ]\n    },\n    {\n        \"appId\": 24,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            27,\n            33\n        ]\n    },\n    {\n        \"appId\": 29,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            14\n        ]\n    },\n    {\n        \"appId\": 3,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            19\n        ]\n    },\n    {\n        \"appId\": 28,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            29\n        ]\n    },\n    {\n        \"appId\": 22,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            20,\n            24\n        ]\n    },\n    {\n        \"appId\": 15,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            34\n        ]\n    },\n    {\n        \"appId\": 9,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            32\n        ]\n    },\n    {\n        \"appId\": 27,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            12\n        ]\n    },\n    {\n        \"appId\": 4,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            15\n        ]\n    },\n    {\n        \"appId\": 7,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            18,\n            24\n        ]\n    },\n    {\n        \"appId\": 39,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            5\n        ]\n    },\n    {\n        \"appId\": 26,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            17\n        ]\n    },\n    {\n        \"appId\": 20,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            6\n        ]\n    },\n    {\n        \"appId\": 13,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            12\n        ]\n    },\n    {\n        \"appId\": 7,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            20\n        ]\n    },\n    {\n        \"appId\": 24,\n        \"countryCode\": \"UK\",\n        \"recommendedAdvertiserIds\": [\n            19\n        ]\n    },\n    {\n        \"appId\": 18,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            17\n        ]\n    },\n    {\n        \"appId\": 5,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            12\n        ]\n    },\n    {\n        \"appId\": 18,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            10\n        ]\n    },\n    {\n        \"appId\": 11,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            18\n        ]\n    },\n    {\n        \"appId\": 5,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            21\n        ]\n    },\n    {\n        \"appId\": 0,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            22\n        ]\n    },\n    {\n        \"appId\": 35,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            33\n        ]\n    },\n    {\n        \"appId\": 29,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            5\n        ]\n    },\n    {\n        \"appId\": 34,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            15\n        ]\n    },\n    {\n        \"appId\": 29,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            7\n        ]\n    },\n    {\n        \"appId\": 9,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            8\n        ]\n    },\n    {\n        \"appId\": 21,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            16\n        ]\n    },\n    {\n        \"appId\": 33,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            11\n        ]\n    },\n    {\n        \"appId\": 40,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            14,\n            30\n        ]\n    },\n    {\n        \"appId\": 35,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            33\n        ]\n    },\n    {\n        \"appId\": 22,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            20\n        ]\n    },\n    {\n        \"appId\": 9,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            29\n        ]\n    },\n    {\n        \"appId\": 38,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            7\n        ]\n    },\n    {\n        \"appId\": 25,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            12\n        ]\n    },\n    {\n        \"appId\": 36,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            19\n        ]\n    },\n    {\n        \"appId\": 5,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            25,\n            10\n        ]\n    },\n    {\n        \"appId\": 16,\n        \"countryCode\": \"UK\",\n        \"recommendedAdvertiserIds\": [\n            17\n        ]\n    },\n    {\n        \"appId\": 20,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            30\n        ]\n    },\n    {\n        \"appId\": 7,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            6\n        ]\n    },\n    {\n        \"appId\": 28,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            16,\n            22\n        ]\n    },\n    {\n        \"appId\": 16,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            7\n        ]\n    },\n    {\n        \"appId\": 10,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            16,\n            14\n        ]\n    },\n    {\n        \"appId\": 14,\n        \"countryCode\": \"UK\",\n        \"recommendedAdvertiserIds\": [\n            10\n        ]\n    },\n    {\n        \"appId\": 18,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            16\n        ]\n    },\n    {\n        \"appId\": 5,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            12\n        ]\n    },\n    {\n        \"appId\": 34,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            31\n        ]\n    },\n    {\n        \"appId\": 40,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            26,\n            31\n        ]\n    },\n    {\n        \"appId\": 34,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            28\n        ]\n    },\n    {\n        \"appId\": 21,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            22\n        ]\n    },\n    {\n        \"appId\": 14,\n        \"countryCode\": \"US\",\n        \"recommendedAdvertiserIds\": [\n            9\n        ]\n    },\n    {\n        \"appId\": 8,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            11\n        ]\n    },\n    {\n        \"appId\": 25,\n        \"countryCode\": \"UK\",\n        \"recommendedAdvertiserIds\": [\n            11\n        ]\n    },\n    {\n        \"appId\": 19,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            14\n        ]\n    },\n    {\n        \"appId\": 32,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            10\n        ]\n    },\n    {\n        \"appId\": 19,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            11\n        ]\n    },\n    {\n        \"appId\": 6,\n        \"countryCode\": \"\",\n        \"recommendedAdvertiserIds\": [\n            13,\n            22\n        ]\n    },\n    {\n        \"appId\": 6,\n        \"countryCode\": \"DE\",\n        \"recommendedAdvertiserIds\": [\n            15\n        ]\n    },\n    {\n        \"appId\": 30,\n        \"countryCode\": \"UNKNOWN\",\n        \"recommendedAdvertiserIds\": [\n            17\n        ]\n    },\n    {\n        \"appId\": 27,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            14\n        ]\n    },\n    {\n        \"appId\": 1,\n        \"countryCode\": \"IT\",\n        \"recommendedAdvertiserIds\": [\n            7\n        ]\n    }\n]"
+				}
+			]
+		}
+	]
+}
